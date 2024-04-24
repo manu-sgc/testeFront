@@ -27,7 +27,7 @@
     border: 0px solid #ccc;
     border-radius: 20px;
     padding: 5px;
-    width: 700px; /* Ajuste conforme necessário */
+    width: 700px;
     background-color: #C7D2DD;
 }
 
@@ -133,34 +133,54 @@
 /* Estilo para a aba de criação de pergunta */
 
 .criar-pergunta-container {
-  position: relative;
+  position: absolute;
   top: 150px;
   left: 350px;
-  width: 400px;
-  padding: 20px;
-  background-color: #ffffff;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  padding: 0px;
+  background-color: #fff;
+  color: #003366;
 }
 
 .pergunta-input {
-  width: 100%;
+  width: 700px;
   margin-bottom: 10px;
   padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 2px solid #C7D2DD;
+  border-radius: 20px;
+  background-color: #C7D2DD;
+  color: #003366;
+}
+
+.pergunta-input:focus {
+  border-color: #003366 !important; /* Cor da borda quando a caixa de texto é clicada */
+  outline: none;
+  border-width: 2px;
 }
 
 .submit-button {
-  background-color: #007bff;
+  background-color: #003366;
   color: #fff;
-  padding: 10px 20px;
+  padding: 5px 8px;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
+  border-radius: 20px;
 }
 
 .submit-button:hover {
-  background-color: #0056b3;
+  background-color: #0151a0;
+}
+
+/*Estilo para a página inicial*/
+.pagina-inicial-container {
+  padding: 20px;
+}
+
+.pagina-inicial-title {
+  color: #003366;
+  font-size: 36px;
+  margin-bottom: 10px;
+  position: absolute;
+  left: 350px;
+  top: 120px;
 }

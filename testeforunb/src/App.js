@@ -4,8 +4,8 @@ import Sidebar from './components/Sidebar';
 import SearchBar from './components/SearchBar';
 import AccessButton from './components/AccessButton';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import QuestionButton from './components/QuestionButton';
 import CriarPergunta from './components/CriarPergunta';
+import PaginaInicial from './components/PaginaInicial';
 
 function App() {
     return (
@@ -15,7 +15,7 @@ function App() {
                 <SearchBar />
                 <AccessButton />
                 <Routes>
-                    <Route exact path="/" element={<QuestionButton />} /> 
+                    <Route path="/" element={<PaginaInicial />} />
                     <Route path="/criar-pergunta" element={<CriarPergunta />} /> 
                 </Routes>
             </div>
